@@ -16,7 +16,7 @@
 
 ## What I do
 
-I build the data layer that makes reporting possible.
+I build the data layer that makes reporting possible & reliable.
 
 That means extracting from ERP systems, modelling data so it keeps its history, testing it so the
 numbers tie back to the source, and serving clean star schemas to Power BI. As the **sole analyst**
@@ -40,6 +40,9 @@ Data Vault 2.0 model in dbt: 4 hubs, 3 links and 6 insert-only satellites that k
 of every price, status and stock level. A star schema feeds a Power BI report saved as PBIP under
 version control. GitHub Actions rebuilds and tests everything daily, and every run reconciles the
 warehouse totals back to the ERP.
+
+A small, focused showcase of the engineering behind reporting. The Power BI report is a thin layer
+on top to show the marts in use; the pipeline, model and tests are the point.
 
 **[Live dbt docs and lineage](https://alydk.github.io/erp-data-vault-dbt/)**
 
